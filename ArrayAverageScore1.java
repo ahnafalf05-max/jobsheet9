@@ -47,6 +47,8 @@ Done
 2. Modify the program in Experiment 3 so that it can produce output like the following 
 display 
 Done
+3. Commit and push the changes to GitHub 
+Done
 
     
 
