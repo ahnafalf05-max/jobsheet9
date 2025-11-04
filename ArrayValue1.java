@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class ArrayNilai1 {
+public class ArrayValue1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
