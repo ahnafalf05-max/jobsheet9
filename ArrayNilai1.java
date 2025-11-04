@@ -21,3 +21,11 @@ public class ArrayNilai1 {
         
     }
 }
+
+/* 1. Change the statement in step 5 to be like this 
+Run the program. Have there been any changes? How can it be like that? 
+Done
+
+
+
+*/
