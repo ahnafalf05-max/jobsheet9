@@ -4,23 +4,38 @@ import java.util.Scanner;
 public class ArrayAverageScore1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] score = new int[10];
-        double total = 0;
-        int passCount = 0;
 
-        for (int i = 0; i < score.length; i++) {
-            System.out.print("Enter student score " + (i + 1) + " : ");
-            score[i] = sc.nextInt();
-            total += score[i];
+        System.out.print("Enter the number of students: ");
+        int numStudents = sc.nextInt();
 
-            if (score[i] > 70) {
+        int[] scores = new int[numStudents];
+        int passCount = 0, failCount = 0;
+        double passTotal = 0, failTotal = 0;
+
+        for (int i = 0; i < numStudents; i++) {
+            System.out.print("Enter the final score " + i + ": ");
+            scores[i] = sc.nextInt();
+
+            if (scores[i] > 70) {
+                passTotal += scores[i];
                 passCount++;
+            } else {
+                failTotal += scores[i];
+                failCount++;
             }
         }
 
-        double average = total / score.length;
-        System.out.println("\nThe class average score is = " + average);
-        System.out.println("Number of students who passed (>70) = " + passCount);
+        if (passCount > 0) {
+            System.out.println("The average score of students who passed is " + (passTotal / passCount));
+        } else {
+            System.out.println("No students passed.");
+        }
+
+        if (failCount > 0) {
+            System.out.println("The average score of students who failed is " + (failTotal / failCount));
+        } else {
+            System.out.println("No students failed.");
+        }
     }
 }
  
@@ -29,7 +44,10 @@ public class ArrayAverageScore1 {
 1. Modify the program in Experiment 3 so that the program can display the number of 
 students who passed, students who have a score greater than 70 (>70) 
 Done
-2. 
+2. Modify the program in Experiment 3 so that it can produce output like the following 
+display 
+Done
+
     
 
 
