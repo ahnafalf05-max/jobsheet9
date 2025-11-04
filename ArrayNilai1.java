@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class ArrayNilai1 {
@@ -8,22 +9,26 @@ public class ArrayNilai1 {
 
         
         for (int i = 0; i < finalScore.length; i++) {
-            System.out.print("Enter the final score for student " + (i + 1) + ": ");
+            System.out.print("Enter the final score for student " + i + ": ");
             finalScore[i] = sc.nextInt();
         }
 
-        System.out.println("\nStudents who passed (score > 70):");
+        System.out.println("\nStudent Results:");
 
         
         for (int i = 0; i < finalScore.length; i++) {
             if (finalScore[i] > 70) {
-                System.out.println("Student " + (i + 1) + " passed with score: " + finalScore[i]);
+                System.out.println("Student " + i + " Passed!");
+            } else {
+                System.out.println("Student " + i + " Failed!");
             }
         }
 
         sc.close();
     }
 }
+
+
 
 
 /* 
@@ -34,6 +39,12 @@ Done
  is the total number of elements in the array finalScore
 3. Change the statement in step 6 to be like this, so that the program only displays the 
 grades of students who passed, students who have a score > 70
+ Done
+4. Modify the program so that it displays all students, and mark which one passed, and 
+which did not! 
+Done
+5. Commit and push the changes to GitHub.
+Done
 
 
 
