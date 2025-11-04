@@ -3,7 +3,7 @@ public class arrayNumber1 {
         
         int[] num = {5, 12, 7, 20};  
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i <= 4; i++) {
             System.out.println(num[i]);
         }
     }
@@ -21,6 +21,9 @@ Done
 3. Change the statement in step 6 to be like this 
 What is the result? How can it be like that?
 Done
+4.If the condition in the for-loop statement is changed to i <= 4, what is the output of 
+the program? Why is the result like that?
+error because num 4 is already
 
 
 
