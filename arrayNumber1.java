@@ -24,6 +24,8 @@ Done
 4.If the condition in the for-loop statement is changed to i <= 4, what is the output of 
 the program? Why is the result like that?
 error because num 4 is already
+5. Commit and push the changes to GitHub
+Done
 
 
 
